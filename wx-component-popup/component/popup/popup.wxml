@@ -1,0 +1,10 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+
+<view class="page">
+  <view catchtouchmove="preventTouchMove" class="alert-mask" hidden="{{isShowPopup}}"></view>
+  <view class="modalDlg" hidden="{{isShowPopup}}">
+    <view class="modelTitle">{{popupTitle}}</view>
+    <view class="modeContent"> {{popupContent}} </view>
+    <view class="hide-btn" bindtap="onTap">×</view>
+  </view>
+</view>

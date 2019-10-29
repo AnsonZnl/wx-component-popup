@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="wrap">
+  <view class="container">
+    <view class="userinfo">{{title}}</view>
+  </view>
+  <button bindtap="showPopup">弹窗</button>
+  <popup bindhidepopop="hidePopop" is-show-popup="{{isShowPopup}}" popup-title="{{popupTitle}}" popup-content="{{popupContent}}"/>
+</view>
